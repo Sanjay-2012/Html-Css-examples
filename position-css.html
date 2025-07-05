@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>position-css</title>
+  <!-- position values
+     *static (default)
+     *absolute
+       1.convert block level into inline 
+       2.B.v.port(if parent is absent) top left corner
+       3. to move any element we uses sub-properties
+     *relative
+     1. doesn't convert block level into inline 
+       2. Doesn't follow B.v.port
+       3. to move any element from current position
+       4. to move any element we uses sub-properties
+     *fixed
+     1. converted into inline
+     2. Doesn't follow B.v.port
+     3.uses sub-properties
+     4.it never follow page flow
+     *sticky 
+     sticky will acts certain relative and certain time fixed
+     sub-properties in position
+      top
+      right
+      bottom
+      left
+      z-index 
+      positive higher priority
+      negative lower priority-->
+  <style>
+    body {
+      height: 2000px;
+      border: 2px solid red;
+    }
+
+    section {
+      border: 2px solid;
+      margin: 20px;
+      padding: 20px;
+      position: absolute;
+    }
+
+    section:nth-child(1) {
+      background-color: aqua;
+      z-index: 2;
+      left: 200px;
+    }
+
+    section:nth-child(2) {
+      background-color: violet;
+      position: absolute;
+      left: 500px;
+      z-index: 5;
+    }
+
+    section:nth-child(3) {
+      background-color: red;
+      position: relative;
+      left: 10px;
+      top: 400px;
+
+    }
+
+    section:nth-child(4) {
+      background-color: pink;
+      position: fixed;
+      top: 20px;
+
+    }
+
+    section:nth-child(5) {
+      background-color: yellow;
+      position: sticky;
+      top: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <section>position-static</section>
+  <section>position-absolute</section>
+  <section>position-relative</section>
+  <section>position-fixed</section>
+  <section>position-sticky</section>
+</body>
+
+</html>
