@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Attributes selectors
+        </title>
+        <style>
+            /*attributes selectors
+             has attributes [attr_name]
+             attributes equal to[attr_name=attr_value]
+             attributes start with[attr_name^=attr_value]
+             attributes ends with[attr_name$=attr_value]
+             attributes contains[attr_name*=attr_value*/
+
+            [type=text]{
+                margin: 12px;
+                padding: 12px;
+                border-radius:30px;
+            }
+             [placeholder^=M]{
+                margin: 12px;
+                padding: 12px;
+                background-color: aqua;
+            }
+            [value$=n]{
+                margin: 12px;
+                padding: 12px;
+                background-color:hotpink;
+                border-radius:30px;
+                cursor: pointer;
+            }
+            [name*=s]{
+                margin: 12px;
+                padding: 12px;
+                background-color: blue;
+                font-style:italic ;
+            }
+           </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="username" placeholder="Enter your name:">
+            <input type="text" name="password" placeholder="Enter your password:">
+            <input type="tel" name="Mobile" placeholder="Mobile number:">
+            <input type="submit" value="LogIn">
+        </form>
+        </body>
+</html>
