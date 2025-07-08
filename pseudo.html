@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        pseudo selector
+        <!--class pseudo selector":'
+            hover
+            first-child
+            last-child
+             nth-child-->
+        <!--element pseudo selector"::"
+            first letter
+            first-line
+            placeholder
+            after/before
+            selection
+            -->
+
+    </title>
+    <style>
+        section:hover {
+            border: 2px solid black;
+            color: white;
+            background-color: lightblue;
+        }
+
+        section:first-child {
+            border: 2px solid gray;
+            color: black;
+            background-color: lightblue;
+        }
+
+        section:last-child {
+            border: 2px solid red;
+            color: yellow;
+            background-color: brown;
+        }
+
+        section:nth-child(odd) {
+            border: 2px solid gray;
+            color: black;
+            background-color: lightblue;
+        }
+
+        section::after {
+            content: " from nkl";
+        }
+
+        section::before {
+            content: "I am ";
+        }
+
+        input::placeholder {
+            color: aqua;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            background-color: pink;
+        }
+
+        section::first-letter {
+            color: orange;
+            border-radius: 3px;
+        }
+
+        p:first-of-type {
+            color: blueviolet;
+        }
+
+        p::selection {
+            color: orangered;
+            background-color: black;
+        }
+
+        div {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        sanjay
+        <section> ragul</section>
+        frkjfnjkldgmkld
+    </section>
+
+    <hr>
+    <input type="text" placeholder="Enter your name" <br><br>
+    <p>This is first paragraph</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi praesentium veritatis, placeat molestias
+        asperiores laudantium consectetur totam, fugit, aliquam laborum. Vero dolor neque ea amet! Quibusdam asperiores
+        recusandae obcaecati?</p>
+</body>
+
+</html>
