@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <!--grid  is only communicate with parent-->
+    <head>
+        <title>Grid</title>
+        <!-- grid container properties
+         *grid template column
+         *grid template row
+         *grid template 
+         *justify content
+         *align content
+         *row gap
+         *column gap
+         *grid gap
+         
+          justify is x-axis
+          align is y-axis
+          -->
+         <style>
+            section{
+                display: grid;
+                border: 2px solid red;
+                 padding: 300px; 
+                grid-gap: 30px;
+                height: 600px;
+                width: 95%;
+                 grid-template-columns: 20% 20% 20%;
+                 grid-template-rows:200px; 
+                 /* grid-template:30% 30px; */
+                /* justify-content: center; */
+                align-content: end;
+
+            }
+            div{
+                 border: 1px solid black;
+                 }
+         </style>
+    </head>
+    <section>
+        <div>
+            item1
+        </div>
+        <div>
+            item2
+        </div>
+        <div>
+            item3
+        </div>
+    </section>
+</html>
