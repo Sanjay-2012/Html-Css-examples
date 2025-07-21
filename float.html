@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Flex Property
+    </title>
+  <!--float is used to move the element from right to left or left to right (right,left,none). none is the default value-->
+  <!--flex is used in newer version and it change block level elements into inline elements it communicates with parent and child
+  flex container property
+     *display
+     *flex-direction(row,row reverse,column,column reverse)
+     *flex-wrap(wrap,nowrap)
+     *flex-flow
+     *justify-content
+     *align content
+     *align item-->
+  
+  <!--flex items property
+     *order( negative or lower- highest priority & positive or higher lowest priority)
+     *flex (s.h.p)
+     *flex shrink
+     *flex grow
+     *flex basic
+     *align-self
+     -->
+
+   <style> 
+      .container{
+        display: flex;
+        height: 500px;
+      }
+        div{
+            
+            width: 100%;
+            flex: 1;
+           
+        }
+        .items{
+            border: 1px solid blue;
+            order:1;
+            align-self: center;
+           
+        }
+        .items2{
+            border: 1px solid red;
+            order:-1;;
+
+        }
+        .items1{
+            border: 1px solid green;
+            order: 2;
+        } 
+        
+    </style>
+    <body>
+        <section class="container">
+            <div class="items"> Sanjay 1</div>
+             <div class="items1"> Sanjay 2</div>
+              <div class="items2"> Sanjay 3</div>
+        </section>
+    </body>
+</html>
