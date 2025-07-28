@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform-css</title>
+        <!-- Transform values
+         translate() 
+          1.it is like position relative
+          2.it moves the element from current element
+          3.gives values in px.
+
+         scale() mostly use
+          1.to increase or decrease the zoom of the element.
+          2.give values in decimal.
+          3.scale is always controlled by hover
+
+         rotate() mostly use
+         1.gives values in deg
+         2.default is 0
+         3.used to rotate an element
+
+         skew()
+         1.slide the element
+         2.gives values as deg 
+
+         Transition property (to see other elements properties values how it changes from old to new)
+         1.transition-property
+         2.transition-delay
+         3.transition-duration
+         4.transition-timing-function -->
+         <style>
+          section{
+            border: 3px solid;
+            padding: 10PX;
+            margin: 10px;
+           }
+             section:nth-child(1){
+            width: 1000px;
+             transform: translate(50px,300px); /*50px -x axis  300px - y axis */
+           } 
+            section:nth-child(2){
+            width: 300px;
+            text-align: center;
+            position: relative;
+            left: 70px; 
+
+            /* transition-property:transform,background-color,color,border ;
+            transition-delay:0.1s;
+            transition-duration:5s ;
+            transition-timing-function: linear; 
+            transition: all 1s linear 0s; */
+        }
+         section:nth-child(2):hover{
+            transform: scale(1.4);
+            background-color: rgb(36, 233, 36);
+            color: white;
+            border: 3px solid black; 
+        }  
+         section:nth-child(3){
+            position: relative;
+            top: 300px;
+            left: 500px;
+            width: 200px;
+            transform: rotate(30deg);
+        }
+        section:nth-child(4){
+            transform: skew(20deg);
+        }
+         </style>
+    </head>
+    <body>
+        <section>Transform-translate</section>
+        <section>Transform-scale</section>
+        <section>Transform-rotate</section>
+        <section>Transform-skew</section>
+    </body>
+</html>
